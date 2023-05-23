@@ -149,9 +149,9 @@ HoldPattern[PaLMGeneratedTextObject][data : Except[KeyValuePattern[{
   "SafetyRatings" -> _
 }]]] :=
     (
-      Message[PaLMGeneratedTextObject::invPaLMTextCompletionObject, data];
-      Failure["InvalidPaLMTextCompletionObject", <|
-        "MessageTemplate" :> PaLMGeneratedTextObject::invPaLMTextCompletionObject,
+      Message[PaLMGeneratedTextObject::invPaLMGeneratedTextObject, data];
+      Failure["InvalidPaLMGeneratedTextObject", <|
+        "MessageTemplate" :> PaLMGeneratedTextObject::invPaLMGeneratedTextObject,
         "MessageParameters" -> {data},
         "Data" -> data
       |>]
