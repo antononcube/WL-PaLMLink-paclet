@@ -76,13 +76,6 @@ PaLMRequest[path_, body:_Association|None:None, opts_List:{}, head_:PaLMRequest]
 	], "InheritedFailure"];
 
 
-(*
-	ConformResponse[head, resp]
-		takes an HTTPResponse and returns the contained JSON data. Returns a Failure if the request failed.
-
-		head is used for messages.
-*)
-
 ConformResponse[head_, resp_] :=
 	Catch@Module[{statusCode, body},
 
