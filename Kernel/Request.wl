@@ -34,7 +34,7 @@ Options[PaLMRequest] = {
 };
 
 PaLMRequest[path_, body:_Association|None:None, opts_List:{}, head_:PaLMRequest] :=
-	Enclose[Module[{apiKey, user, bodyRule, resp, multipartQ = body =!= None && MemberQ[body, _Association]},
+	Enclose[Module[{apiKey, user, bodyRule, resp, multipartQ = False},
 
 		apiKey = OptionValue[head, opts, "APIKey"];
 		user = OptionValue[head, opts, "User"];
