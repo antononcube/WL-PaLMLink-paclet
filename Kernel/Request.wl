@@ -29,15 +29,15 @@ Needs["AntonAntonov`PaLMLink`Constants`"];
 *)
 
 Options[PaLMRequest] = {
-	PaLMAPIKey  :> $PaLMAPIKey,
-	PaLMAPIUser :> $PaLMAPIUser
+	"APIKey"  :> $PaLMAPIKey,
+	"User" :> $PaLMAPIUser
 };
 
 PaLMRequest[path_, body:_Association|None:None, opts_List:{}, head_:PaLMRequest] :=
 	Enclose[Module[{apiKey, user, bodyRule, resp, multipartQ = body =!= None && MemberQ[body, _Association]},
 
-		apiKey = OptionValue[head, opts, PaLMAPIKey];
-		user = OptionValue[head, opts, PaLMAPIUser];
+		apiKey = OptionValue[head, opts, "APIKey"];
+		user = OptionValue[head, opts, "User"];
 
 		ConfirmBy[apiKey, StringQ,
 			Message[head::invalidPaLMAPIKey, apiKey];
@@ -63,7 +63,7 @@ PaLMRequest[path_, body:_Association|None:None, opts_List:{}, head_:PaLMRequest]
 			<|
 				"Scheme" -> "https",
 				"Domain" -> "generativelanguage.googleapis.com",
-				"Query" -><| "key" -> apiKey |>,
+				"Query" -> <| "key" -> apiKey |>,
 				"Method" -> If[body === None, "GET", "POST"],
 				"ContentType" -> If[multipartQ, "multipart/form-data", "application/json"],
 				"Path" -> path,

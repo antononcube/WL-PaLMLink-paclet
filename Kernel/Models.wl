@@ -7,8 +7,8 @@ Needs["AntonAntonov`PaLMLink`Constants`"];
 Needs["AntonAntonov`PaLMLink`Request`"];
 
 Options[PaLMModels] = {
-	PaLMAPIKey  :> $PaLMAPIKey,
-	PaLMAPIUser :> $PaLMAPIUser
+	"APIKey"  :> $PaLMAPIKey,
+	"User" :> $PaLMAPIUser
 };
 
 PaLMModels[opts:OptionsPattern[]] :=
@@ -22,7 +22,6 @@ PaLMModels[opts:OptionsPattern[]] :=
 ConformModels[data_] :=
 	Enclose[
 		Module[{list},
-(*			ConfirmAssert[data["object"] === "list"];*)
 			list = Confirm[data["models"]];
 			Lookup[#, "name", Message[PaLMModels::invPaLMModelResponse, #];Nothing] &/@ list
 		],
