@@ -44,11 +44,11 @@ PaLMFileUpload::invalidPaLMAPIKey = "`1` is not a valid PaLM API key. Consider s
 
 PaLMModels::invPaLMModelResponse = "The PaLM API returned invalid model specification `1`.";
 
-PaLMGenerateText::invPaLMGenerateTextResponse = "The PaLM API returned invalid completion specification `1`.";
+PaLMGenerateText::invPaLMGenerateTextResponse = "The PaLM API returned invalid text generation specification `1`.";
 PaLMGenerateText::invPromptSpec = "Invalid prompt specification `1`. Expected a string or a pair of strings.";
 PaLMGenerateText::invProbResponse = "Request to the PaLM API returned an invalid report of token probabilities `1`.";
 
-PaLMGenerateMessage::invPaLMGenerateMessageResponse = "The PaLM API returned invalid completion specification `1`.";
+PaLMGenerateMessage::invPaLMGenerateMessageResponse = "The PaLM API returned invalid generation specification `1`.";
 PaLMGenerateMessage::invPromptSpec = "Invalid prompt specification `1`. Expected an chat message or a list of chat messages.";
 PaLMGenerateMessage::invUsageResponse = "Request to the PaLM API returned an invalid report of its usage: `1`.";
 
