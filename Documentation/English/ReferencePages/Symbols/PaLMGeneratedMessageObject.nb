@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17470,        486]
-NotebookOptionsPosition[     11635,        360]
-NotebookOutlinePosition[     12418,        386]
-CellTagsIndexPosition[     12339,        381]
+NotebookDataLength[     26077,        668]
+NotebookOptionsPosition[     19774,        531]
+NotebookOutlinePosition[     20594,        558]
+CellTagsIndexPosition[     20515,        553]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -93,20 +93,32 @@ Cell[TextData[{
 
 Cell[TextData[{
  Cell[BoxData[
-  TagBox[
-   FrameBox["\<\"XXXX\"\>"],
-   "FunctionPlaceholder"]], "InlineSeeAlsoFunction",
+  ButtonBox["PaLMGenerateMessage",
+   BaseStyle->"Link",
+   ButtonData->"paclet:AntonAntonov/PaLMLink/ref/PaLMGenerateMessage"]], 
+  "InlineSeeAlsoFunction",
   TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
   "45cbd9c1-6080-458b-971f-3866754deafb"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  ButtonBox["PaLMGeneratedTextObject",
+   BaseStyle->"Link",
+   ButtonData->"paclet:AntonAntonov/PaLMLink/ref/PaLMGeneratedTextObject"]], 
+  "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"7148c2d1-b566-49ef-a435-d8587a7beb6a",ExpressionUUID->
+  "ce23453b-7b90-4518-afa7-9f35e49fa793"],
  Cell[BoxData[
   RowBox[{
   Cell[TextData[StyleBox[
    " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
     "057142d4-f5e0-49a6-8cc1-e17d84d16fc6"], 
    DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
-     FrontEndObject[
-      LinkObject["hmt58_shm", 537, 6]], 17], $CellContext`cellobj$$ = 
-    CellObject[7121]}, 
+    "763a7dde-e5f3-463a-85a5-41dac75ce2a7", 
+     "4ba7c897-e62c-4c7e-8fe3-0bdd986b8de3"], $CellContext`cellobj$$ = 
+    CellObject[
+    "010fd412-74ca-4468-b1ee-4a57af09e0b2", 
+     "81863348-3358-4ccc-ad95-efe02a92c838"]}, 
     TemplateBox[{
       GraphicsBox[{{
          Thickness[0.06], 
@@ -131,6 +143,8 @@ Cell[TextData[{
   "InlineListingAddButton",ExpressionUUID->
   "010fd412-74ca-4468-b1ee-4a57af09e0b2"]
 }], "SeeAlso",
+ CellChangeTimes->{{3.893924832044688*^9, 3.893924843583497*^9}, {
+  3.893925168670779*^9, 3.8939251938829308`*^9}},
  CellID->1143144628,ExpressionUUID->"91651498-c7b5-424d-8cab-1a71a4305f57"]
 }, Open  ]],
 
@@ -140,7 +154,10 @@ Cell["Related Guides", "MoreAboutSection",
  CellChangeTimes->{{3.843042374232973*^9, 3.843042375545676*^9}},
  CellID->1443056734,ExpressionUUID->"b8a43cb6-d389-44bd-888e-a113077370ac"],
 
-Cell["XXXX", "MoreAbout",
+Cell[TextData[ButtonBox["PaLMLink",
+ BaseStyle->"Link",
+ ButtonData->"paclet:AntonAntonov/PaLMLink/guide/PaLMLink"]], "MoreAbout",
+ CellChangeTimes->{{3.8939248460792713`*^9, 3.893924852533112*^9}},
  CellID->1921702767,ExpressionUUID->"19a3a04a-d08d-423e-b124-97df06cac5bb"]
 }, Open  ]],
 
@@ -168,6 +185,8 @@ Cell[BoxData[
  CellID->944425426,ExpressionUUID->"403ca2f7-b904-4198-9c3b-7ad1bb0f261a"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  InterpretationBox[GridBox[{
     {
@@ -181,6 +200,158 @@ Cell[BoxData[
    }],
   $Line = 0; Null]], "PrimaryExamplesSection",
  CellID->906499805,ExpressionUUID->"5d43e28e-b868-41b2-90ae-321aa04379ab"],
+
+Cell["\<\
+Requesting message generation with all properties produces this type of \
+object:\
+\>", "ExampleText",
+ CellChangeTimes->{{3.893924905682331*^9, 3.893924953133499*^9}, {
+  3.8939251365906687`*^9, 3.893925137366419*^9}},
+ CellID->605799660,ExpressionUUID->"a7550bea-022a-4dec-aa10-e5356ad4dc88"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PaLMGenerateMessage", "[", 
+  RowBox[{"\"\<What is the total population of EU?\>\"", ",", "All"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.893924954768271*^9, 3.893924986783206*^9}},
+ CellLabel->"In[33]:=",
+ CellID->1355920194,ExpressionUUID->"3316e947-dc01-4ebd-9fdb-6c7c382d2f29"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["PaLMGeneratedMessageObject",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = True, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"], 
+               ImageSizeCache -> {12., {0., 12.}}], Appearance -> None, 
+              BaseStyle -> {}, ButtonFunction :> (Typeset`open$$ = True), 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Author: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"1\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Content: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"The total population of the European Union (EU) is \
+447,349,594 as of 2022. The EU is a political and economic union of 27 member \
+states that are located primarily in Europe. The EU operates through a system \
+of supranational institutions and intergovernmental-negotiated decisions by \
+the member states. It aims to bring about the coordination of member states' \
+economic policies, a single market in which goods and people move freely, and \
+common policies on trade, agriculture, fisheries, and regional \
+development.\"", "SummaryItem"]}]}}, AutoDelete -> False, 
+             BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
+        GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"], 
+               ImageSizeCache -> {12., {0., 12.}}], Appearance -> None, 
+              BaseStyle -> {}, ButtonFunction :> (Typeset`open$$ = False), 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Author: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"1\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Content: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"The total population of the European Union (EU) is \
+447,349,594 as of 2022. The EU is a political and economic union of 27 member \
+states that are located primarily in Europe. The EU operates through a system \
+of supranational institutions and intergovernmental-negotiated decisions by \
+the member states. It aims to bring about the coordination of member states' \
+economic policies, a single market in which goods and people move freely, and \
+common policies on trade, agriculture, fisheries, and regional \
+development.\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Prompt: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{"\[LeftAssociation]", 
+                    
+                    RowBox[{
+                    "\"content\"", "\[Rule]", 
+                    "\"What is the total population of EU?\""}], 
+                    "\[RightAssociation]"}], "}"}], "SummaryItem"]}]}}, 
+             AutoDelete -> False, 
+             BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  AntonAntonov`PaLMLink`PaLMGeneratedMessageObject[<|
+   "Prompt" -> {<|"content" -> "What is the total population of EU?"|>}, 
+    "Content" -> 
+    "The total population of the European Union (EU) is 447,349,594 as of \
+2022. The EU is a political and economic union of 27 member states that are \
+located primarily in Europe. The EU operates through a system of \
+supranational institutions and intergovernmental-negotiated decisions by the \
+member states. It aims to bring about the coordination of member states' \
+economic policies, a single market in which goods and people move freely, and \
+common policies on trade, agriculture, fisheries, and regional development.", 
+    "Author" -> "1", 
+    "CitationMetadata" -> <|
+     "citationSources" -> {<|
+        "startIndex" -> 122, "endIndex" -> 287, "uri" -> 
+         "https://quizlet.com/60918988/grg-vocab-review-3-flash-cards/"|>, <|
+        "startIndex" -> 174, "endIndex" -> 302, "uri" -> 
+         "https://egretnews.com/index.php/2017/06/page/64/"|>}|>|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.893925148215967*^9},
+ CellLabel->"Out[33]=",
+ CellID->942163060,ExpressionUUID->"eda6a646-1c4d-47d3-acc3-092860ba5485"]
+}, Open  ]]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -358,10 +529,11 @@ Cell[BoxData[""], "Template",
 }, Closed]]
 }, Open  ]]
 },
-WindowSize->{700, 770},
-WindowMargins->{{5, Automatic}, {Automatic, 0}},
+WindowSize->{1135, 812},
+WindowMargins->{{Automatic, 1086}, {Automatic, 56}},
 TaggingRules-><|"Paclet" -> "AntonAntonov/PaLMLink"|>,
 CellContext->"Global`",
+Magnification:>1.25 Inherited,
 FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
   CharacterEncoding -> "UTF-8"],
@@ -373,124 +545,132 @@ ExpressionUUID->"763a7dde-e5f3-463a-85a5-41dac75ce2a7"
 (*CellTagsOutline
 CellTagsIndex->{
  "ExtendedExamples"->{
-  Cell[5822, 186, 488, 13, 58, "ExtendedExamplesSection",ExpressionUUID->"83fe109f-1854-429f-8924-d91e77348e59",
+  Cell[13961, 357, 488, 13, 72, "ExtendedExamplesSection",ExpressionUUID->"83fe109f-1854-429f-8924-d91e77348e59",
    CellTags->"ExtendedExamples",
    CellID->1293230817]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"ExtendedExamples", 12145, 374}
+ {"ExtendedExamples", 20320, 546}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 123, 1, 74, "ObjectName",ExpressionUUID->"ab2c2328-7121-4520-96ec-74488ebf9881",
+Cell[580, 22, 123, 1, 92, "ObjectName",ExpressionUUID->"ab2c2328-7121-4520-96ec-74488ebf9881",
  CellID->908668436],
-Cell[706, 25, 226, 4, 61, "Usage",ExpressionUUID->"e54722d1-5338-4082-87a7-5ec62bfc96ee",
+Cell[706, 25, 226, 4, 76, "Usage",ExpressionUUID->"e54722d1-5338-4082-87a7-5ec62bfc96ee",
  CellID->1234190035],
-Cell[935, 31, 96, 1, 27, "Notes",ExpressionUUID->"420b36c5-bf82-40e3-9b14-b3f3abd11783",
+Cell[935, 31, 96, 1, 33, "Notes",ExpressionUUID->"420b36c5-bf82-40e3-9b14-b3f3abd11783",
  CellID->487371872]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1068, 37, 435, 12, 41, "TechNotesSection",ExpressionUUID->"81a27d80-1173-4b96-b032-b2046ce823ac",
+Cell[1068, 37, 435, 12, 51, "TechNotesSection",ExpressionUUID->"81a27d80-1173-4b96-b032-b2046ce823ac",
  CellID->756423046],
-Cell[1506, 51, 99, 1, 19, "Tutorials",ExpressionUUID->"4ad1d500-6ee6-447d-8689-fc047fbee9c7",
+Cell[1506, 51, 99, 1, 24, "Tutorials",ExpressionUUID->"4ad1d500-6ee6-447d-8689-fc047fbee9c7",
  CellID->98943882]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1642, 57, 472, 13, 40, "RelatedLinksSection",ExpressionUUID->"b9566392-04c4-4142-8462-f26dc7a1304e",
+Cell[1642, 57, 472, 13, 50, "RelatedLinksSection",ExpressionUUID->"b9566392-04c4-4142-8462-f26dc7a1304e",
  CellID->797481996],
-Cell[2117, 72, 103, 1, 19, "RelatedLinks",ExpressionUUID->"724caff9-d101-4d12-a7af-58cc1573138a",
+Cell[2117, 72, 103, 1, 24, "RelatedLinks",ExpressionUUID->"724caff9-d101-4d12-a7af-58cc1573138a",
  CellID->834465845]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2257, 78, 459, 13, 40, "SeeAlsoSection",ExpressionUUID->"9d5a9356-6e34-4700-ac2f-ef47348d0849",
+Cell[2257, 78, 459, 13, 50, "SeeAlsoSection",ExpressionUUID->"9d5a9356-6e34-4700-ac2f-ef47348d0849",
  CellID->1799242005],
-Cell[2719, 93, 1544, 40, 26, "SeeAlso",ExpressionUUID->"91651498-c7b5-424d-8cab-1a71a4305f57",
+Cell[2719, 93, 2233, 54, 30, "SeeAlso",ExpressionUUID->"91651498-c7b5-424d-8cab-1a71a4305f57",
  CellID->1143144628]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4300, 138, 184, 2, 40, "MoreAboutSection",ExpressionUUID->"b8a43cb6-d389-44bd-888e-a113077370ac",
+Cell[4989, 152, 184, 2, 50, "MoreAboutSection",ExpressionUUID->"b8a43cb6-d389-44bd-888e-a113077370ac",
  CellID->1443056734],
-Cell[4487, 142, 101, 1, 19, "MoreAbout",ExpressionUUID->"19a3a04a-d08d-423e-b124-97df06cac5bb",
+Cell[5176, 156, 274, 4, 24, "MoreAbout",ExpressionUUID->"19a3a04a-d08d-423e-b124-97df06cac5bb",
  CellID->1921702767]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4625, 148, 531, 14, 70, "ExamplesInitializationSection",ExpressionUUID->"498edc69-ea98-4a16-99f7-913b92ce59fa",
+Cell[5487, 165, 531, 14, 87, "ExamplesInitializationSection",ExpressionUUID->"498edc69-ea98-4a16-99f7-913b92ce59fa",
  CellID->2051837736],
-Cell[5159, 164, 181, 3, 47, "ExampleInitialization",ExpressionUUID->"403ca2f7-b904-4198-9c3b-7ad1bb0f261a",
+Cell[6021, 181, 181, 3, 57, "ExampleInitialization",ExpressionUUID->"403ca2f7-b904-4198-9c3b-7ad1bb0f261a",
  CellID->944425426]
 }, Open  ]],
-Cell[5355, 170, 442, 12, 73, "PrimaryExamplesSection",ExpressionUUID->"5d43e28e-b868-41b2-90ae-321aa04379ab",
- CellID->906499805],
 Cell[CellGroupData[{
-Cell[5822, 186, 488, 13, 58, "ExtendedExamplesSection",ExpressionUUID->"83fe109f-1854-429f-8924-d91e77348e59",
+Cell[6239, 189, 442, 12, 90, "PrimaryExamplesSection",ExpressionUUID->"5d43e28e-b868-41b2-90ae-321aa04379ab",
+ CellID->906499805],
+Cell[6684, 203, 304, 6, 30, "ExampleText",ExpressionUUID->"a7550bea-022a-4dec-aa10-e5356ad4dc88",
+ CellID->605799660],
+Cell[CellGroupData[{
+Cell[7013, 213, 308, 6, 33, "Input",ExpressionUUID->"3316e947-dc01-4ebd-9fdb-6c7c382d2f29",
+ CellID->1355920194],
+Cell[7324, 221, 6588, 130, 181, "Output",ExpressionUUID->"eda6a646-1c4d-47d3-acc3-092860ba5485",
+ CellID->942163060]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13961, 357, 488, 13, 72, "ExtendedExamplesSection",ExpressionUUID->"83fe109f-1854-429f-8924-d91e77348e59",
  CellTags->"ExtendedExamples",
  CellID->1293230817],
-Cell[6313, 201, 241, 5, 35, "ExampleSection",ExpressionUUID->"11454ebf-5675-4d13-b4e4-bf60c7c3546a",
+Cell[14452, 372, 241, 5, 43, "ExampleSection",ExpressionUUID->"11454ebf-5675-4d13-b4e4-bf60c7c3546a",
  CellID->648350032],
-Cell[6557, 208, 264, 5, 23, "ExampleSection",ExpressionUUID->"27c3facb-9fe6-435b-9e82-bcc8e8451bfa",
+Cell[14696, 379, 264, 5, 27, "ExampleSection",ExpressionUUID->"27c3facb-9fe6-435b-9e82-bcc8e8451bfa",
  CellID->486962946],
 Cell[CellGroupData[{
-Cell[6846, 217, 243, 5, 23, "ExampleSection",ExpressionUUID->"f9fad3b4-2c6f-4958-8974-74f49e3d5af1",
+Cell[14985, 388, 243, 5, 27, "ExampleSection",ExpressionUUID->"f9fad3b4-2c6f-4958-8974-74f49e3d5af1",
  CellID->326054705],
-Cell[7092, 224, 247, 5, 26, "ExampleSubsection",ExpressionUUID->"7a053653-82b4-40b4-9dfe-81a320f582cf",
+Cell[15231, 395, 247, 5, 32, "ExampleSubsection",ExpressionUUID->"7a053653-82b4-40b4-9dfe-81a320f582cf",
  CellID->1770643438],
-Cell[7342, 231, 247, 5, 22, "ExampleSubsection",ExpressionUUID->"a1e01fe7-1e5b-40b8-925d-8ffad9c0931e",
+Cell[15481, 402, 247, 5, 26, "ExampleSubsection",ExpressionUUID->"a1e01fe7-1e5b-40b8-925d-8ffad9c0931e",
  CellID->1523365987]
 }, Open  ]],
-Cell[7604, 239, 248, 5, 35, "ExampleSection",ExpressionUUID->"86a9adfc-79f1-4167-94ae-97893d88ba9c",
+Cell[15743, 410, 248, 5, 43, "ExampleSection",ExpressionUUID->"86a9adfc-79f1-4167-94ae-97893d88ba9c",
  CellID->912103975],
-Cell[7855, 246, 258, 5, 23, "ExampleSection",ExpressionUUID->"906aad58-ffe7-4145-ba71-90fcbf5f19af",
+Cell[15994, 417, 258, 5, 27, "ExampleSection",ExpressionUUID->"906aad58-ffe7-4145-ba71-90fcbf5f19af",
  CellID->993235539],
-Cell[8116, 253, 251, 5, 23, "ExampleSection",ExpressionUUID->"69ad8de3-74cc-4478-8042-ca4852535a27",
+Cell[16255, 424, 251, 5, 27, "ExampleSection",ExpressionUUID->"69ad8de3-74cc-4478-8042-ca4852535a27",
  CellID->919315842],
-Cell[8370, 260, 257, 5, 23, "ExampleSection",ExpressionUUID->"242d5839-79b6-4182-ac6c-f3b3f24ad312",
+Cell[16509, 431, 257, 5, 27, "ExampleSection",ExpressionUUID->"242d5839-79b6-4182-ac6c-f3b3f24ad312",
  CellID->1943999976],
-Cell[8630, 267, 249, 5, 23, "ExampleSection",ExpressionUUID->"a17c3d6a-a05b-4700-a6aa-3da6e00d2f28",
+Cell[16769, 438, 249, 5, 27, "ExampleSection",ExpressionUUID->"a17c3d6a-a05b-4700-a6aa-3da6e00d2f28",
  CellID->991391174]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8916, 277, 111, 1, 72, "MetadataSection",ExpressionUUID->"41fdda7d-ddd4-4496-a243-4f713831668f",
+Cell[17055, 448, 111, 1, 90, "MetadataSection",ExpressionUUID->"41fdda7d-ddd4-4496-a243-4f713831668f",
  CellID->2133327992],
-Cell[9030, 280, 476, 12, 26, "History",ExpressionUUID->"f29962fc-07d1-4e04-a410-b66e469e9518",
+Cell[17169, 451, 476, 12, 33, "History",ExpressionUUID->"f29962fc-07d1-4e04-a410-b66e469e9518",
  CellID->456591232],
 Cell[CellGroupData[{
-Cell[9531, 296, 484, 13, 21, "CategorizationSection",ExpressionUUID->"e2f65203-347e-4e91-b907-cdea53f1fe79",
+Cell[17670, 467, 484, 13, 27, "CategorizationSection",ExpressionUUID->"e2f65203-347e-4e91-b907-cdea53f1fe79",
  CellID->969765493],
-Cell[10018, 311, 135, 2, 35, "Categorization",ExpressionUUID->"2bf2a3f1-9857-4cef-9151-b330172a8ab3",
+Cell[18157, 482, 135, 2, 43, "Categorization",ExpressionUUID->"2bf2a3f1-9857-4cef-9151-b330172a8ab3",
  CellID->1595243768],
-Cell[10156, 315, 149, 2, 35, "Categorization",ExpressionUUID->"e9ef49e1-5264-49af-a44e-6d71f3bbfbde",
+Cell[18295, 486, 149, 2, 43, "Categorization",ExpressionUUID->"e9ef49e1-5264-49af-a44e-6d71f3bbfbde",
  CellID->280786467],
-Cell[10308, 319, 147, 2, 35, "Categorization",ExpressionUUID->"35e9aad1-0ab5-4d09-8949-f061ed4be696",
+Cell[18447, 490, 147, 2, 43, "Categorization",ExpressionUUID->"35e9aad1-0ab5-4d09-8949-f061ed4be696",
  CellID->1156578410],
-Cell[10458, 323, 173, 2, 35, "Categorization",ExpressionUUID->"fccf9b08-8f29-49a3-90de-4e032a45303c",
+Cell[18597, 494, 173, 2, 43, "Categorization",ExpressionUUID->"fccf9b08-8f29-49a3-90de-4e032a45303c",
  CellID->1738847873]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[10668, 330, 111, 1, 21, "KeywordsSection",ExpressionUUID->"b5bac89a-c578-4cb1-afd7-14ef89954c18",
+Cell[18807, 501, 111, 1, 26, "KeywordsSection",ExpressionUUID->"b5bac89a-c578-4cb1-afd7-14ef89954c18",
  CellID->1381391036],
-Cell[10782, 333, 99, 1, 70, "Keywords",ExpressionUUID->"1e54f57f-2d07-4e3d-8a0d-b23002f8e434",
+Cell[18921, 504, 99, 1, 87, "Keywords",ExpressionUUID->"1e54f57f-2d07-4e3d-8a0d-b23002f8e434",
  CellID->593434335]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[10918, 339, 119, 1, 21, "TemplatesSection",ExpressionUUID->"cfd47104-4b3b-45bf-bf47-95db5bc37607",
+Cell[19057, 510, 119, 1, 26, "TemplatesSection",ExpressionUUID->"cfd47104-4b3b-45bf-bf47-95db5bc37607",
  CellID->936811677],
-Cell[11040, 342, 149, 2, 70, "Template",ExpressionUUID->"c264c819-4a18-4ea2-a1f0-42bff2007863",
+Cell[19179, 513, 149, 2, 87, "Template",ExpressionUUID->"c264c819-4a18-4ea2-a1f0-42bff2007863",
  CellID->1791239182],
-Cell[11192, 346, 138, 2, 70, "Template",ExpressionUUID->"35bfa95c-d89a-4b94-a240-8ff6e79c288f",
+Cell[19331, 517, 138, 2, 87, "Template",ExpressionUUID->"35bfa95c-d89a-4b94-a240-8ff6e79c288f",
  CellID->1931168228],
-Cell[11333, 350, 134, 2, 70, "Template",ExpressionUUID->"8eaf3bc9-1770-490d-a9ae-7b653886de94",
+Cell[19472, 521, 134, 2, 87, "Template",ExpressionUUID->"8eaf3bc9-1770-490d-a9ae-7b653886de94",
  CellID->76567238],
-Cell[11470, 354, 137, 2, 70, "Template",ExpressionUUID->"59a1b8dd-5962-44be-9c48-2fe896d8457d",
+Cell[19609, 525, 137, 2, 87, "Template",ExpressionUUID->"59a1b8dd-5962-44be-9c48-2fe896d8457d",
  CellID->522864513]
 }, Closed]]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
