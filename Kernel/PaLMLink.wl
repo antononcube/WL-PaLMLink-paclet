@@ -21,6 +21,7 @@ Needs["AntonAntonov`PaLMLink`Models`"];
 Needs["AntonAntonov`PaLMLink`GenerateText`"];
 Needs["AntonAntonov`PaLMLink`GenerateMessage`"];
 Needs["AntonAntonov`PaLMLink`EmbedText`"];
+Needs["AntonAntonov`PaLMLink`Messages`"];
 
 End[];
 EndPackage[];
