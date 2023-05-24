@@ -195,7 +195,7 @@ PaLMGeneratedMessageObject /: MakeBoxes[completion_PaLMGeneratedMessageObject, f
     },
     {
       BoxForm`SummaryItem@{"Prompt: ", completion["Prompt"]},
-      If[KeyExistsQ[completion, "CitationMetadata"],
+      If[KeyExistsQ[First[completion], "CitationMetadata"],
         BoxForm`SummaryItem@{"CitationMetadata: ", completion["CitationMetadata"]},
         Nothing
       ]

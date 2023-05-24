@@ -3,6 +3,7 @@ BeginPackage["AntonAntonov`PaLMLink`Constants`"];
 Begin["`Private`"];
 
 Needs["AntonAntonov`PaLMLink`"];
+Needs["AntonAntonov`PaLMLink`Messages.wl"];
 
 (*
 	PaLM examples show API keys are loaded from the PALM_API_KEY environment variable by default:
@@ -25,7 +26,7 @@ GetAPIKey[] :=
 		If[!MissingQ[key], Throw[key]];
 
 		key = Environment["PALM_API_KEY"];
-		Replace[key, $Failed -> Missing["NoPaLMAPIKey"]]
+		Replace[key, $Failed -> Missing["invalidPaLMAPIKey"]]
 	];
 
 

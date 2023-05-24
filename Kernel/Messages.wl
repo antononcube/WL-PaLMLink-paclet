@@ -40,7 +40,7 @@ PaLMGenerateImage::invalidPaLMAPIKey =
 PaLMTranscribeAudio::invalidPaLMAPIKey =
 PaLMTranslateAudio::invalidPaLMAPIKey =
 PaLMEmbedText::invalidPaLMAPIKey =
-PaLMFileUpload::invalidPaLMAPIKey = "`1` is not a valid PaLM API key. Consider setting the PaLMKey option or the $PaLMKey constant to a string containing a valid PaLM API key.";
+PaLMFileUpload::invalidPaLMAPIKey = "`1` is not a valid PaLM API key. Consider setting the \"APIKey\" option or the $PaLMAPIKey constant to a string containing a valid PaLM API key.";
 
 PaLMModels::invPaLMModelResponse = "The PaLM API returned invalid model specification `1`.";
 
