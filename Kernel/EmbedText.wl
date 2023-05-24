@@ -11,12 +11,13 @@ Needs["AntonAntonov`PaLMLink`Request`"];
 (* PaLM EmbedText                                          *)
 (*=========================================================*)
 
-
 Options[PaLMEmbedText] = {
   "APIKey" :> $PaLMAPIKey,
   "User" :> $PaLMAPIUser,
   "Model" -> "embedding-gecko-001"
 };
+
+SetAttributes[PaLMEmbedText, Listable];
 
 PaLMEmbedText[str_String, propSpec_, opts : OptionsPattern[]] :=
     ConformEmbedding[
@@ -58,8 +59,6 @@ ResponseData[data_] := InvalidEmbeddingResponse[data];
 
 GetResponseDataProperty[respData_, "Embedding"] := respData["Embedding"];
 
-GetResponseDataProperty[respData_, "ResponseUsage"] := ConformUsage[respData["ResponseUsage"]];
-
 GetResponseDataProperty[respData_, props_List] := GetResponseDataProperty[respData, #] & /@ props;
 
 GetResponseDataProperty[respData_, propSpec_] :=
@@ -82,22 +81,6 @@ InvalidEmbeddingResponse[data_] :=
         "Response" -> data
       |>]
     );
-
-ConformUsage[KeyValuePattern[{
-  "prompt_tokens" -> pTokens_Integer,
-  "total_tokens" -> tTokens_Integer
-}]] :=
-    <|
-      "PromptTokens" -> pTokens,
-      "TotalTokens" -> tTokens
-    |>;
-
-ConformUsage[usage_] :=
-    Failure["InvalidUsageResponse", <|
-      "MessageTemplate" :> PaLMEmbedText::invUsageResponse,
-      "MessageParameters" -> usage
-    |>];
-
 
 End[];
 EndPackage[];
